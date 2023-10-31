@@ -9,7 +9,7 @@ function createTable() {
   for(let j = 0 ; j< cols;j++){
     const col = document.createElement("td");
 
-    col.innerText = `Row${i}Column${j}`
+    col.innerText = `Row-${i}Column-${j}`
 
 
     row.appendChild(col);
