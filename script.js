@@ -3,7 +3,9 @@ function createTable() {
    let rows = parseInt(prompt("input number of rows"));
 	let cols = parseInt(prompt("input number of columns"))
   // // console.log(value);
-  for(let i = 0; i<rows;i++){
+
+	if(rows<=cols){
+		for(let i = 0; i<rows;i++){
     const row = document.createElement("tr");
     
   for(let j = 0 ; j< cols;j++){
@@ -18,7 +20,9 @@ function createTable() {
 
   }
 
-  console.log(table);
+  // console.log(table);
+	}
+  
 
   //  Columns
 
